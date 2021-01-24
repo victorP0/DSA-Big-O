@@ -8,6 +8,8 @@ So you want to know if anyone out of the 15 people have the same breed as your d
 You stand up and yell out, who here has a golden retriever and would like to be a playdate for my golden. 
 omeone yells - "I do, be happy to bring him over"
 
+Constant
+
 2) Determine the Big O for the following algorithm: 
 You are sitting in a room with 15 people. 
 You want to find a playmate for your dog who is of the same breed. 
@@ -15,9 +17,12 @@ So you want to know if anyone out of the 15 people have the same breed as your d
 You start with the first person and ask him if he has a golden retriever. 
 He says no, then you ask the next person, and the next, 
 and the next until you find someone who has a golden or there is no one else to ask.
+
+Linear
+
 */
 
-// 2. Even or odd
+// 2. Even or odd (Constant)
 
 function isEven(value) {
     if (value % 2 === 0) {
@@ -28,7 +33,7 @@ function isEven(value) {
     }
 }
 
-// 3. Are you here?
+// 3. Are you here? (Polynomial time O(n^k))
 
 function areYouHere(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
@@ -41,7 +46,7 @@ function areYouHere(arr1, arr2) {
     return false;
 }
 
-// 4. Doubler
+// 4. Doubler (Linear)
 
 function doubleArrayValues(array) {
     for (let i = 0; i < array.length; i++) {
@@ -50,7 +55,7 @@ function doubleArrayValues(array) {
     return array;
 }
 
-// 5. Naive search
+// 5. Naive search (Linear)
 
 function naiveSearch(array, item) {
     for (let i = 0; i < array.length; i++) {
@@ -60,7 +65,7 @@ function naiveSearch(array, item) {
     }
 }
 
-// 6. Creating pairs:
+// 6. Creating pairs: (Polynomial time O(n^k))
 
 function createPairs(arr) {
     for (let i = 0; i < arr.length; i++) {
@@ -70,7 +75,7 @@ function createPairs(arr) {
     }
 }
 
-// 7. Compute the sequence
+// 7. Compute the sequence 
 
 function compute(num) {
     let result = [];
@@ -89,7 +94,7 @@ function compute(num) {
     return result;
 }
 
-// 8. An efficient search
+// 8. An efficient search (O(log(n)))
 
 function efficientSearch(array, item) {
     let minIndex = 0;
@@ -113,7 +118,7 @@ function efficientSearch(array, item) {
     }
     return 
 
-//9. Random element
+//9. Random element ()
 
 function findRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
